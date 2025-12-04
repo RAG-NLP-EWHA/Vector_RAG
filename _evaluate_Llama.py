@@ -16,7 +16,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 os.environ["RAGAS_TIMEOUT"] = "300" 
 
 
-OUTPUT_PATH = "/mnt/aix23604/output"
+OUTPUT_PATH = "aix23604/output"
 RESULT_PATH = os.path.join(OUTPUT_PATH, 'llama_sample_validation.json')
 EMB_MODEL = "BAAI/bge-base-en-v1.5" 
 
