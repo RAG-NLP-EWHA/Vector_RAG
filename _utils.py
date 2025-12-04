@@ -2,11 +2,11 @@ from datasets import load_from_disk
 
 def load_datasets(mode:str = 'distractor'):
     if mode == 'distractor':
-        data_path = "/mnt/aix23604/hotpotqa/distractor"
+        data_path = "/aix23604/hotpotqa/distractor"
         dataset = load_from_disk(data_path)
         
     else : 
-        data_path = "/mnt/aix23604/hotpotqa/fullwiki"
+        data_path = "/aix23604/hotpotqa/fullwiki"
         dataset = load_from_disk(data_path)
         
     return dataset
