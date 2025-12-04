@@ -3,8 +3,8 @@ corpus 호출 -> chunk -> faiss
 EMB_MODEL 상의해서 결정 & 실행
 '''
 
-CORPUS_PATH = "/mnt/aix23604/hotpotqa/corpus_distractor.parquet"
-FAISS_PATH = "/mnt/aix23604/hotpotqa/faiss_distractor" 
+CORPUS_PATH = "/aix23604/hotpotqa/corpus_distractor.parquet"
+FAISS_PATH = "/aix23604/hotpotqa/faiss_distractor" 
 EMB_MODEL = "BAAI/bge-base-en-v1.5",  # "BAAI/bge-large-en-v1.5", "all-MiniLM-L6-v2"
 CHUNK_SIZE = 500
 OVERLAP = 30
