@@ -30,12 +30,12 @@ if torch.cuda.is_available():
     print("This notebook sees GPU:", torch.cuda.get_device_name(0))
 
 # 경로 & 하이퍼파라미터 설정
-CORPUS_PATH = "/mnt/aix23604/hotpotqa/corpus_distractor.parquet" # 코퍼스 파일 위치
-FAISS_PATH = "/mnt/aix23604/rag/llama_faiss_hotpotqa_index" # FAISS 인덱스 위치
+CORPUS_PATH = "/aix23604/hotpotqa/corpus_distractor.parquet" # 코퍼스 파일 위치
+FAISS_PATH = "/aix23604/rag/llama_faiss_hotpotqa_index" # FAISS 인덱스 위치
 EMB_MODEL = "BAAI/bge-base-en-v1.5"  # 임베딩 모델 이름 : "BAAI/bge-large-en-v1.5", "all-MiniLM-L6-v2" [tuple에서 문자열로 수정]
 retriever_k = 5 # retriever에서 가져올 문서 개수
 cross_encoder_k = 3 # cross-encoder로 다시 rerank할 문서 개수
-OUTPUT_PATH = "/mnt/aix23604/output"
+OUTPUT_PATH = "/aix23604/output"
 RESULT_PATH = os.path.join(OUTPUT_PATH, 'llama_validation_sample_10.json')
 
 # Llama Model
