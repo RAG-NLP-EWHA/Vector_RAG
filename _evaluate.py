@@ -1,7 +1,7 @@
 '''
 openAI env 추가 필요 
 '''
-OUTPUT_PATH = "/mnt/aix23604/output"
+OUTPUT_PATH = "aix23604/output"
 RESULT_PATH = os.path.join(OUTPUT_PATH, 'sample.json')
 judge_llm_model="gpt-4o-mini"
 
