@@ -36,12 +36,12 @@ if torch.cuda.is_available():
 load_dotenv()
 openai_api_key = os.environ.get("OPENAI_API_KEY")
 
-CORPUS_PATH = "/mnt/aix23604/hotpotqa/corpus_distractor.parquet"
-FAISS_PATH = "/mnt/aix23604/hotpotqa/faiss_distractor" 
+CORPUS_PATH = "/aix23604/hotpotqa/corpus_distractor.parquet"
+FAISS_PATH = "/aix23604/hotpotqa/faiss_distractor" 
 EMB_MODEL = "BAAI/bge-base-en-v1.5" # "BAAI/bge-large-en-v1.5", "all-MiniLM-L6-v2", "text-embedding-3-small"
 retriever_k = 5
 cross_encoder_k = 3
-OUTPUT_PATH = "/mnt/aix23604/output"
+OUTPUT_PATH = "/aix23604/output"
 RESULT_PATH = os.path.join(OUTPUT_PATH, 'sample.json')
 
 template = """
